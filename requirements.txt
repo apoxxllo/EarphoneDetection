@@ -4,3 +4,4 @@ numpy~=1.26.4
 google~=3.0.0
 Flask~=3.0.3
 roboflow~=1.1.30
+gunicorn==20.1.0
