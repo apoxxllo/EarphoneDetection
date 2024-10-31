@@ -1,6 +1,6 @@
 runtime: python
 env: flex
-entrypoint: gunicorn -b :$PORT app:app -t 600
+entrypoint: gunicorn -b :$PORT main:app -t 600
 
 handlers:
 - url: /static
@@ -14,3 +14,8 @@ runtime_config:
 
 resources:
   memory_gb: 4
+  disk_size_gb: 20
+  cpu: 2
+
+manual_scaling:
+  instances: 1
